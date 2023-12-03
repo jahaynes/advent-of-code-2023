@@ -76,3 +76,9 @@ eof = Parser go
 
 ok :: Parser a ()
 ok = pure ()
+
+sepBy :: Eq c => [c] -> Parser [c] a -> Parser [c] [a]
+sepBy sep p = do
+    x  <- p
+    xs <- many (list sep *> p)
+    pure (x:xs)
