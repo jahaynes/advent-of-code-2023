@@ -44,3 +44,8 @@ executables:
     main:           Main.hs
     source-dirs:    src/Day02
     dependencies:   advent-of-code
+
+  day03:
+    main:           Main.hs
+    source-dirs:    src/Day03
+    dependencies:   advent-of-code
