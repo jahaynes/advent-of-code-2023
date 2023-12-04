@@ -82,3 +82,9 @@ sepBy sep p = do
     x  <- p
     xs <- many (list sep *> p)
     pure (x:xs)
+
+sepBy' :: Parser s c -> Parser s a -> Parser s [a]
+sepBy' sep p = do
+    x  <- p
+    xs <- many (sep *> p)
+    pure (x:xs)
