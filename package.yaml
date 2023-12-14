@@ -70,3 +70,8 @@ executables:
     main:           Main.hs
     source-dirs:    src/Day07
     dependencies:   advent-of-code
+
+  day08:
+    main:           Main.hs
+    source-dirs:    src/Day08
+    dependencies:   advent-of-code
